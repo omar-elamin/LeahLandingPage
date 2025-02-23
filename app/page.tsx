@@ -30,8 +30,11 @@ export default function Home() {
       }`}>
         <p className="text-gray-500 mt-2">Coming soon.</p>
         
-        <button className="mt-4 px-6 py-2.5 text-sm font-medium bg-[#222222] text-white border border-[#222222] rounded-lg shadow-sm hover:bg-[#333333] transition-colors duration-200">
-          Contact.
+        <button 
+          onClick={() => window.location.href = 'mailto:contact@leah.gg'}
+          className="mt-4 px-6 py-2.5 text-sm font-medium bg-[#222222] text-white border border-[#222222] rounded-lg shadow-sm hover:bg-[#333333] transition-colors duration-200 cursor-pointer"
+        >
+          Contact
         </button>
       </div>
       <footer className="absolute bottom-0 w-full text-center bg-[#222222] text-gray-400 text-xs py-1">
