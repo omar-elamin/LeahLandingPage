@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 const config: Config = {
     darkMode: ["class"],
@@ -59,8 +60,11 @@ const config: Config = {
   		fontFamily: {
   			satoshi: ['Satoshi', 'sans-serif'],
   		},
+  		animation: {
+  			'fade-in': 'fadeIn 1s ease-out forwards',
+  		},
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 };
 export default config;
