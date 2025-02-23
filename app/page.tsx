@@ -19,7 +19,7 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-black text-white overflow-hidden">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-black text-white overflow-xhidden">
       <div className="absolute inset-0 opacity-20">
         <motion.div
           className="absolute inset-0 bg-purple-500 rounded-full blur-3xl"
