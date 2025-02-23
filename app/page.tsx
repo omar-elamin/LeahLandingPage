@@ -25,12 +25,16 @@ export default function Home() {
       >
         Leah<span className="text-gray-900">.</span>
       </div>
-      <p className="text-gray-500 mt-2">Coming soon.</p>
-    
-      <button className="mt-4 px-6 py-2.5 text-sm font-medium bg-[#fbfbfd] text-black border border-[#d2d2d7] rounded-lg shadow-sm hover:bg-[#f5f5f7] transition-colors duration-200">
-        Contact.
-      </button>
-      <footer className="absolute bottom-0 w-full text-center bg-gray-900 text-gray-400 text-sm py-2">
+      <div className={`opacity-0 ${
+        show ? 'animate-fade-in animation-delay-1000' : ''
+      }`}>
+        <p className="text-gray-500 mt-2">Coming soon.</p>
+        
+        <button className="mt-4 px-6 py-2.5 text-sm font-medium bg-[#222222] text-white border border-[#222222] rounded-lg shadow-sm hover:bg-[#333333] transition-colors duration-200">
+          Contact.
+        </button>
+      </div>
+      <footer className="absolute bottom-0 w-full text-center bg-[#222222] text-gray-400 text-xs py-1">
         &copy; Leah. 2025
       </footer>
     </div>
