@@ -1,58 +1,21 @@
-"use client"
+'use client';
 
-import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
+import React from 'react';
 
 export default function Home() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY })
-    }
-
-    window.addEventListener("mousemove", handleMouseMove)
-
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove)
-    }
-  }, [])
-
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-black text-white overflow-xhidden">
-      <div className="absolute inset-0 opacity-20">
-        <motion.div
-          className="absolute inset-0 bg-purple-500 rounded-full blur-3xl"
-          animate={{
-            x: mousePosition.x - 250,
-            y: mousePosition.y - 250,
-          }}
-          transition={{ type: "spring", damping: 10, stiffness: 50 }}
-        />
-      </div>
-      <motion.h1
-        className="text-4xl md:text-6xl font-bold mb-8 text-center"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.5 }}
-      >
-        Leah: Unveiling the Unseen
-      </motion.h1>
-      <motion.p
-        className="text-lg md:text-xl text-center max-w-md mb-12 text-gray-300"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1 }}
-      >
-        Navigate the labyrinth of reality with an ethereal companion. Discover the hidden threads that weave our world.
-      </motion.p>
-      <motion.button
-        className="px-8 py-3 bg-purple-600 text-white rounded-full text-lg font-semibold hover:bg-purple-700 transition-colors duration-300"
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        Embark on the Journey
-      </motion.button>
-    </main>
-  )
+    <div className="flex flex-col items-center justify-center min-h-screen bg-white text-black">
+      <h1 className="text-2xl font-semibold text-center text-gray-900">
+        The new way to experience museums.
+      </h1>
+      <h2 className="text-7xl font-bold mt-4">Leah<span className="text-gray-900">.</span></h2>
+      <p className="text-gray-500 mt-2">Coming soon.</p>
+      <button className="mt-4 px-6 py-2 text-sm font-semibold bg-black text-white rounded-md shadow-md hover:shadow-lg">
+        Contact.
+      </button>
+      <footer className="absolute bottom-0 w-full text-center bg-gray-900 text-gray-400 text-sm py-2">
+        &copy; Leah. 2025
+      </footer>
+    </div>
+  );
 }
