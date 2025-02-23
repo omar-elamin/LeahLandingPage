@@ -12,14 +12,14 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white text-black">
       <div 
-        className={`text-[4rem] font-semibold text-center text-gray-900 opacity-0 ${
+        className={`text-[4vw] md:text-[3vw] font-semibold text-center text-gray-900 opacity-0 ${
           show ? 'animate-fade-in' : ''
         }`}
       >
         The new way to experience museums.
       </div>
       <div 
-        className={`text-[18rem] font-bold mt-4 opacity-0 ${
+        className={`text-[20vw] md:text-[18vw] font-bold mt-4 opacity-0 ${
           show ? 'animate-fade-in animation-delay-1500' : ''
         }`}
       >
