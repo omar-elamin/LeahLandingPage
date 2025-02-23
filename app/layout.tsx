@@ -6,8 +6,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "Leah: AI Tour Guide",
-  description: "Unveiling the unseen with Leah, your ethereal AI companion",
-    generator: 'v0.dev'
+  description: "Unveiling the unseen with Leah",
 }
 
 export default function RootLayout({
@@ -17,7 +16,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="font-satoshi">{children}</body>
     </html>
   )
 }

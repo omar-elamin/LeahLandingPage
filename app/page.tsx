@@ -10,7 +10,7 @@ export default function Home() {
       </div>
       <div className="text-[8rem] font-bold mt-4">Leah<span className="text-gray-900">.</span></div>
       <p className="text-gray-500 mt-2">Coming soon.</p>
-
+    
       <button className="mt-4 px-6 py-2 text-sm font-semibold bg-black text-white rounded-full shadow-md hover:shadow-lg">
         Contact.
       </button>
