@@ -20,13 +20,13 @@ export default function Home() {
       </div>
       <div 
         className={`text-[18rem] font-bold mt-4 opacity-0 ${
-          show ? 'animate-fade-in animation-delay-500' : ''
+          show ? 'animate-fade-in animation-delay-1500' : ''
         }`}
       >
         Leah<span className="text-gray-900">.</span>
       </div>
       <div className={`opacity-0 ${
-        show ? 'animate-fade-in animation-delay-1000' : ''
+        show ? 'animate-fade-in animation-delay-2500' : ''
       }`}>
         <p className="text-gray-500 mt-2">Coming soon.</p>
         
